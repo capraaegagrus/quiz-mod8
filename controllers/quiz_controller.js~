@@ -54,9 +54,9 @@ exports.new = function(req, res) {
 exports.create = function(req, res) {
   var quiz = models.Quiz.build( req.body.quiz );
   console.log(
-              "\n req.quiz.pregunta " +quiz.pregunta+
-              "\n req.quiz.respuesta " +quiz.respuesta+
-              "\n req.quiz.tema " +quiz.tema);
+              "/n req.quiz.pregunta " +quiz.pregunta+
+              "/n req.quiz.respuesta " +quiz.respuesta+
+              "/n req.quiz.tema " +quiz.tema);
   quiz
   .validate()
   .then(
